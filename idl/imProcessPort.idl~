@@ -1,0 +1,13 @@
+
+#include <InterfaceDataTypes.idl>
+
+interface ComImProcess
+{
+	RTC::CameraImage get_colorImage(out boolean ref);
+	RTC::CameraImage get_irImage(out boolean ref);
+	RTC::CameraImage get_depthImage(out boolean ref);
+	boolean save_colorImage(in string str);
+	boolean save_irImage(in string str);
+	boolean save_depthImage(in string str);
+
+};
